@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        display: grid;
+        grid-template-areas:
+          "n n n n n"
+          "s s c r r"
+          "f f f f f";
+      }
+      nav {
+        grid-area: n;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo {
+      }
+
+      .search {
+      }
+
+      .buttons {
+      }
+      aside {
+        grid-area: s;
+        border: 1px solid black;
+      }
+      article {
+        grid-area: c;
+        padding: 20px;
+        height: 800px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #rsb {
+        grid-area: r;
+        border: 1px solid black;
+      }
+      footer {
+        grid-area: f;
+        border: 1px solid black;
+      }
+
+      .card {
+        align-self: center;
+        margin-block: 20px;
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="search"><input type="text" name="" id="" /></div>
+        <div class="buttons"><button>a</button><button>b</button></div>
+      </nav>
+      <aside>Aside</aside>
+      <article>
+        <div class="card">Card</div>
+        <div class="card">Card</div>
+        <div class="card">Card</div>
+        <div class="card">Card</div>
+      </article>
+      <section id="rsb">Right Sidebar</section>
+      <footer>Footer</footer>
+    </main>
+  </body>
+</html>
